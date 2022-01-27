@@ -1,4 +1,5 @@
 using UnityEngine;
+// ReSharper disable NotAccessedField.Global
 
 namespace Combat
 {
@@ -7,5 +8,6 @@ namespace Combat
         public string weaponName;
         [TextArea] public string description;
         public float range, damage;
+        public Transform attackPoint;
     }
 }

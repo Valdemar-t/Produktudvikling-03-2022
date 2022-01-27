@@ -1,7 +1,4 @@
 ﻿namespace Combat.Enemies
 {
-    public class Bandit : Enemy
-    {
-        
-    }
+    public class Bandit : Enemy {}
 }
