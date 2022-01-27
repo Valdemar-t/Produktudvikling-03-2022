@@ -1,6 +1,5 @@
 ﻿// ReSharper disable ParameterHidesMember
 
-using System;
 using UnityEngine;
 
 namespace Combat
@@ -8,7 +7,7 @@ namespace Combat
     public abstract class Enemy : MonoBehaviour
     {
         public float maxHealth, attackDamage, attackRange;
-        public float currentHealth;
+        [HideInInspector] public float currentHealth;
 
         private void Start()
         {

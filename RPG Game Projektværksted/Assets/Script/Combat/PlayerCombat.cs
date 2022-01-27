@@ -10,7 +10,7 @@ namespace Combat
         [SerializeField] private LayerMask enemyLayers;
         [SerializeField] private MeleeWeapon testEquipWeapon;
         private static readonly int Attack1 = Animator.StringToHash("Attack");
-        public MeleeWeapon currentWeapon;
+        [HideInInspector] public MeleeWeapon currentWeapon;
         private float attackRange, attackDamage;
 
         private void Start() => EquipWeapon(testEquipWeapon);
