@@ -1,4 +1,4 @@
-namespace Combat.MeleeWeapons
+namespace Weapon.MeleeWeapons
 {
     public class Sword : MeleeWeapon {}
 }

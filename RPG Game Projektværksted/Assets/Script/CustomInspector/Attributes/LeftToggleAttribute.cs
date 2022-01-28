@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Combat.CustomInspector.Attributes
+namespace CustomInspector.Attributes
 {
     public class LeftToggleAttribute : PropertyAttribute
     {

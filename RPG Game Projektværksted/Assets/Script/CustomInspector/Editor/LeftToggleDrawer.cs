@@ -1,4 +1,4 @@
-﻿using Combat.CustomInspector.Attributes;
+﻿using CustomInspector.Attributes;
 using UnityEditor;
 using UnityEngine;
 

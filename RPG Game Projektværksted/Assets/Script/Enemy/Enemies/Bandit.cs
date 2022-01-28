@@ -1,4 +1,4 @@
-﻿namespace Combat.Enemies
+﻿namespace Enemy.Enemies
 {
     public class Bandit : Enemy {}
 }

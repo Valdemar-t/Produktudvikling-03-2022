@@ -1,15 +1,18 @@
 ﻿using System.ComponentModel;
-using Combat.CustomInspector.Attributes;
+using CustomInspector.Attributes;
+using CustomInspector.SilentWolfDebug;
 using UnityEngine;
+using Weapon;
+
 // ReSharper disable Unity.PreferNonAllocApi
 // ReSharper disable NotAccessedField.Local
 
-namespace Combat
+namespace Player
 {
-    public class PlayerCombat : MonoBehaviour
+    public class PlayerCombat : PlayerMovement
     {
-        [SerializeField, Header("Toggles"), LeftToggle, Tooltip("This is a Debug switch")] private bool debug;
-        [SerializeField, Header("Player"), Tooltip("This is players animator with Attack animation in it")] private Animator animator;
+        [SerializeField, Header("Toggles"), LeftToggle, Tooltip("This is a Debug switch")] public bool debug, shouldRespawn;
+        [SerializeField, Header("Player"), Tooltip("This is players animator")] private Animator animator;
         [SerializeField, Header("Enemy"), Tooltip("This is the enemy layer masks")] private LayerMask enemyLayers;
         [SerializeField, Header("Weapon"), ConditionalHide("debug"), Tooltip("This is the weapon the player gets at the start of the game (For debugging)")] private MeleeWeapon testEquipWeapon;
         [SerializeField, Space, ConditionalHide("debug"), ReadOnly(true), Tooltip("This is the weapon the player currently have in the hand (Read Only)")] private MeleeWeapon currentWeapon;
@@ -19,8 +22,11 @@ namespace Combat
 
         private void Start() => EquipWeapon(testEquipWeapon);
 
-        private void Update()
+        protected override void OnUpdate() => OnPlayerUpdate();
+
+        protected virtual void OnPlayerUpdate()
         {
+            base.OnUpdate();
             if (Input.GetKeyDown(KeyCode.Mouse0)) Attack();
         }
 
@@ -34,8 +40,11 @@ namespace Combat
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(currentWeapon.attackPoint.position, attackRange, enemyLayers);
             foreach (Collider2D enemy in hitEnemies)
             {
-                Enemy _enemy = enemy.GetComponent<Enemy>();
-                Debug.Log($"Hit enemy: {enemy.name}", this);
+                if (!enemy.isActiveAndEnabled) return;
+                Enemy.Enemy _enemy = enemy.GetComponent<Enemy.Enemy>();
+                #if UNITY_EDITOR
+                if (debug) DebugSW.Log($"\tHit enemy::white; {enemy.name}:blue;");
+                #endif
                 _enemy.Damage(attackDamage);
             }
         }

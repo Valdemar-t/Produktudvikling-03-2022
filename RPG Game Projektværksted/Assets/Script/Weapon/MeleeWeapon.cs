@@ -1,7 +1,8 @@
 using UnityEngine;
+
 // ReSharper disable NotAccessedField.Global
 
-namespace Combat
+namespace Weapon
 {
     public class MeleeWeapon : MonoBehaviour
     {

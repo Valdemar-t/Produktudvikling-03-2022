@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Combat.CustomInspector.Attributes
+namespace CustomInspector.Attributes
 {
 
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property | AttributeTargets.Class | AttributeTargets.Struct)]
