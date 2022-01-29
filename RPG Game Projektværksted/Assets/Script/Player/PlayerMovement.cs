@@ -1,4 +1,5 @@
 using CustomInspector.Attributes;
+using CustomInspector.SilentWolfHelper.Debugger;
 using UnityEngine;
 
 namespace Player
@@ -18,13 +19,29 @@ namespace Player
         private Vector2 rotationOffset;
         private float angle;
 
+        #region Unity MonoBehaviour Methods
+
+        private void Awake() => OnAwake();
+
+        private void Start() => OnStart();
+
         private void Update() => OnUpdate();
+
+        #endregion
+
+        #region Custom MonoBehaviour Methods
+
+        protected virtual void OnAwake() {}
+
+        protected virtual void OnStart() {}
 
         protected virtual void OnUpdate()
         {
             PlayerMove();
             PlayerRotation();
         }
+
+        #endregion
 
         private void PlayerMove()
         {
@@ -41,6 +58,7 @@ namespace Player
         {
             if (cam == null)
             {
+                if (debug) DebugSW.Log("This is a cool colorful debug log method made by SilentWolf:rainbow:b;");
                 cam = Camera.main;
                 return;
             }

@@ -19,15 +19,29 @@ namespace Player
         private static readonly int Attack1 = Animator.StringToHash("Attack");
         private float attackRange, attackDamage;
 
-        private void Start() => EquipWeapon(testEquipWeapon);
+        #region Custom MonoBehaviour Methods
+
+        protected override void OnAwake() => OnPlayerAwake();
+
+        protected override void OnStart()
+        {
+            OnPlayerStart();
+            EquipWeapon(testEquipWeapon);
+        }
 
         protected override void OnUpdate() => OnPlayerUpdate();
+        
+        protected virtual void OnPlayerAwake() => base.OnUpdate();
+
+        protected virtual void OnPlayerStart() => base.OnStart();
 
         protected virtual void OnPlayerUpdate()
         {
             base.OnUpdate();
             if (Input.GetKeyDown(KeyCode.Mouse0)) Attack();
         }
+
+        #endregion
 
         private void EquipWeapon(MeleeWeapon equippedWeapon) => currentWeapon = equippedWeapon;
 

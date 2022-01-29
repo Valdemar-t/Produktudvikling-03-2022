@@ -17,19 +17,26 @@ namespace Player
         [HideInInspector] public float currentHealth;
         [HideInInspector] public float currentMana;
 
-        private void Awake()
+        #region Custom MonoBehaviour Methods
+
+        protected override void OnPlayerAwake()
         {
+            base.OnPlayerAwake();
             currentHealth = maxHealth;
             currentMana = maxMana;
             transform.position = respawnPoint.position;
             respawnPanel.enabled = false;
         }
 
+        protected override void OnPlayerStart() => base.OnPlayerStart();
+
         protected override void OnPlayerUpdate()
         {
             base.OnPlayerUpdate();
             if (debug) if (Input.GetKeyDown(KeyCode.Alpha1)) Damage(5);
         }
+
+        #endregion
 
         public void Damage(float attackDamage)
         {

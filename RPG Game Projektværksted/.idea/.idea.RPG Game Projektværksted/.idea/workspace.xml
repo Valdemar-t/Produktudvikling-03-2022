@@ -2,37 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd3619e7-8d72-46bc-bb34-658856643845" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper/Debugger.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper/Helpers.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper/Helpers.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RPG Game Projektværksted/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RPG Game Projektværksted/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Camera.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Camera.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SIlentWolf.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SIlentWolf.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/Colorize.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper/Debugger/Colorize.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/Colorize.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper/Debugger/Colorize.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/DebugSW.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper/Debugger/DebugSW.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/DebugSW.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper/Debugger/DebugSW.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/Emoji.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper/Debugger/Emoji.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/Emoji.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper/Debugger/Emoji.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/FontColor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper/Debugger/FontColor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/FontColor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper/Debugger/FontColor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/FontFormat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper/Debugger/FontFormat.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/FontFormat.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper/Debugger/FontFormat.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/FontStyle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper/Debugger/FontStyle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/FontStyle.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper/Debugger/FontStyle.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/StringEx.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper/Debugger/StringEx.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/StringEx.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper/Debugger/StringEx.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Enemy/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Enemy/Enemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Player/PlayerCombat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/PlayerCombat.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Player/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/PlayerMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +85,7 @@
       <workItem from="1643287946714" duration="3608000" />
       <workItem from="1643318563928" duration="5533000" />
       <workItem from="1643362556035" duration="19785000" />
-      <workItem from="1643450837620" duration="6255000" />
+      <workItem from="1643450837620" duration="7638000" />
     </task>
     <servers />
   </component>
