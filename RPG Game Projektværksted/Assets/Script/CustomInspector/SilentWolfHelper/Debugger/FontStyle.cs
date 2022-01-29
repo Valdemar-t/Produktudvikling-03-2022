@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Text.RegularExpressions;
 
-namespace CustomInspector.SilentWolfDebug
+namespace CustomInspector.SilentWolfHelper.Debugger
 {
     public static class FontStyle
     {

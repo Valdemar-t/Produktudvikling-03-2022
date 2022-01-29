@@ -2,65 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd3619e7-8d72-46bc-bb34-658856643845" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/Colorize.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/Colorize.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/DebugSW.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/DebugSW.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/Emoji.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/Emoji.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/FontColor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/FontColor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/FontFormat.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/FontFormat.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/FontStyle.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/FontStyle.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/StringEx.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/StringEx.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Enemy/Enemies.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Enemy/Enemy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Player.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Player/Player.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Player/Player.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Player/PlayerCombat.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Player/PlayerMovement.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Weapon.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper/Debugger.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper/Helpers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper/Helpers.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RPG Game Projektværksted/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RPG Game Projektværksted/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Camera.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Camera.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SIlentWolf.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SIlentWolf.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Combat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Combat/CustomInspector.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Combat/CustomInspector/Attributes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/Attributes.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Combat/CustomInspector/Attributes/ConditionalHideAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/Attributes/ConditionalHideAttribute.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Combat/CustomInspector/Attributes/ConditionalHideAttribute.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/Attributes/ConditionalHideAttribute.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Combat/CustomInspector/Attributes/LeftToggleAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/Attributes/LeftToggleAttribute.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Combat/CustomInspector/Attributes/LeftToggleAttribute.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/Attributes/LeftToggleAttribute.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Combat/CustomInspector/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/Editor.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Combat/CustomInspector/Editor/ConditionalHidePropertyDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/Editor/ConditionalHidePropertyDrawer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Combat/CustomInspector/Editor/ConditionalHidePropertyDrawer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/Editor/ConditionalHidePropertyDrawer.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Combat/CustomInspector/Editor/LeftToggleDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/Editor/LeftToggleDrawer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Combat/CustomInspector/Editor/LeftToggleDrawer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/Editor/LeftToggleDrawer.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Combat/Enemies.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Enemy.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Combat/Enemies/Bandit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Enemy/Enemies/Bandit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Combat/Enemies/Bandit.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Enemy/Enemies/Bandit.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Combat/Enemy.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Combat/Enemy.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Enemy/Enemy.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Combat/MeleeWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Weapon/MeleeWeapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Combat/MeleeWeapon.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Weapon/MeleeWeapon.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Combat/MeleeWeapons.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Weapon/MeleeWeapons.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Combat/MeleeWeapons/Sword.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Weapon/MeleeWeapons/Sword.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Combat/MeleeWeapons/Sword.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Weapon/MeleeWeapons/Sword.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Combat/PlayerCombat.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Combat/PlayerCombat.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/PlayerCombat.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/playerMovement.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/playerMovement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/PlayerMovement.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/Colorize.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper/Debugger/Colorize.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/Colorize.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper/Debugger/Colorize.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/DebugSW.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper/Debugger/DebugSW.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/DebugSW.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper/Debugger/DebugSW.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/Emoji.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper/Debugger/Emoji.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/Emoji.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper/Debugger/Emoji.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/FontColor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper/Debugger/FontColor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/FontColor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper/Debugger/FontColor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/FontFormat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper/Debugger/FontFormat.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/FontFormat.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper/Debugger/FontFormat.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/FontStyle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper/Debugger/FontStyle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/FontStyle.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper/Debugger/FontStyle.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/StringEx.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper/Debugger/StringEx.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfDebug/StringEx.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CustomInspector/SilentWolfHelper/Debugger/StringEx.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Enemy/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Enemy/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/PlayerCombat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/PlayerCombat.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/PlayerMovement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,9 +52,12 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Script/CustomInspector/Editor/ConditionalHidePropertyDrawer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/82c503977c5347cf82f44677f633fcf613be00/ed/45dc31d3/Debug.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/CustomInspector/Attributes/LeftToggleAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d3b66f0ad4e34a55b6ef91ab8487819313c000/17/5305a51d/Mathf.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cafb29d5233847fbb4edcf8d7c32b1e3299c90/fa/4d116d0f/Math.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/CustomInspector/Attributes/ConditionalHideAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/CustomInspector/Editor/LeftToggleDrawer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/CustomInspector/Attributes/LeftToggleAttribute.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -136,7 +111,8 @@
       <updated>1643287940571</updated>
       <workItem from="1643287946714" duration="3608000" />
       <workItem from="1643318563928" duration="5533000" />
-      <workItem from="1643362556035" duration="13114000" />
+      <workItem from="1643362556035" duration="19785000" />
+      <workItem from="1643450837620" duration="6255000" />
     </task>
     <servers />
   </component>

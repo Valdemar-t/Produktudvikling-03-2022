@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace CustomInspector.SilentWolfDebug
+namespace CustomInspector.SilentWolfHelper.Debugger
 {
     public static class StringEx
     {

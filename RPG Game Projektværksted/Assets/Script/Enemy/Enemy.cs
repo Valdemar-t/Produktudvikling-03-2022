@@ -1,6 +1,7 @@
 ﻿// ReSharper disable ParameterHidesMember
 
 using CustomInspector.Attributes;
+using CustomInspector.SilentWolfHelper.Debugger;
 using UnityEngine;
 
 // ReSharper disable VirtualMemberNeverOverridden.Global
@@ -20,6 +21,7 @@ namespace Enemy
         public virtual void Damage(float attackDamage)
         {
             currentHealth -= attackDamage;
+            
             if (!(currentHealth <= 0)) return;
             Die();
             currentHealth = 0;
@@ -28,7 +30,7 @@ namespace Enemy
         protected virtual void Die()
         {
             #if UNITY_EDITOR
-            if (debug) Debug.Log($"\t{name} Died", this);
+            if (debug) DebugSW.Log($"\tEnemy:orange; {name}:cyan; Died:lightRed;", this);
             #endif
             Destroy(gameObject);
         }

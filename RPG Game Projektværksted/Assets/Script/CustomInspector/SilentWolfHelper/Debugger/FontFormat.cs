@@ -1,4 +1,4 @@
-﻿namespace CustomInspector.SilentWolfDebug
+﻿namespace CustomInspector.SilentWolfHelper.Debugger
 {
     public class FontFormat
     {

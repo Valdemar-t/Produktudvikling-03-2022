@@ -1,5 +1,8 @@
-﻿using UnityEditor;
+﻿using CustomInspector.SilentWolfHelper.Debugger;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
+using static CustomInspector.SilentWolfHelper.Helpers;
 
 namespace Player
 {
@@ -7,6 +10,10 @@ namespace Player
     {
         [SerializeField, Header("Attributes")] private float maxHealth;
         [SerializeField] private float maxMana;
+        
+        [SerializeField, Header("Respawn")] private Transform respawnPoint;
+        [SerializeField, Space] private Image respawnPanel;
+
         [HideInInspector] public float currentHealth;
         [HideInInspector] public float currentMana;
 
@@ -14,6 +21,8 @@ namespace Player
         {
             currentHealth = maxHealth;
             currentMana = maxMana;
+            transform.position = respawnPoint.position;
+            respawnPanel.enabled = false;
         }
 
         protected override void OnPlayerUpdate()
@@ -24,7 +33,7 @@ namespace Player
 
         public void Damage(float attackDamage)
         {
-            if (debug) Debug.Log("\tPlayer Got Hit", this);
+            if (debug) DebugSW.Log("\tPlayer:lightGreen; Got:lightPurple; Hit:lightRed;", this);
             currentHealth -= attackDamage;
 
             if (currentHealth <= 0) Die();
@@ -32,12 +41,13 @@ namespace Player
 
         private void Die()
         {
-            if (debug) Debug.Log(shouldRespawn ? "\tPlayer Died and Should Respawn" : "\tPlayer Died and Not Respawning\n\t\tGame Over", this);
+            if (debug) DebugSW.Log(shouldRespawn ? "\tPlayer:lightGreen; Died:lightRed; and Should:lightPurple; Respawn:orange;" : "\tPlayer:lightGreen; Died:lightRed; and Not Respawning:lightPurple;\n\t\tGame Over:darkRed;", this);
             if (shouldRespawn) Respawn();
             else
             {
                 currentHealth = 0;
                 Destroy(gameObject);
+
                 #if UNITY_EDITOR
                 if (EditorApplication.isPlaying) EditorApplication.ExitPlaymode();
                 #endif
@@ -46,6 +56,8 @@ namespace Player
 
         private void Respawn()
         {
+            StartCoroutine(Fade(respawnPanel));
+            transform.position = respawnPoint.position;
             currentHealth = maxHealth;
         }
     }

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 using CustomInspector.Attributes;
-using CustomInspector.SilentWolfDebug;
+using CustomInspector.SilentWolfHelper.Debugger;
 using UnityEngine;
 using Weapon;
 
@@ -11,7 +11,6 @@ namespace Player
 {
     public class PlayerCombat : PlayerMovement
     {
-        [SerializeField, Header("Toggles"), LeftToggle, Tooltip("This is a Debug switch")] public bool debug, shouldRespawn;
         [SerializeField, Header("Player"), Tooltip("This is players animator")] private Animator animator;
         [SerializeField, Header("Enemy"), Tooltip("This is the enemy layer masks")] private LayerMask enemyLayers;
         [SerializeField, Header("Weapon"), ConditionalHide("debug"), Tooltip("This is the weapon the player gets at the start of the game (For debugging)")] private MeleeWeapon testEquipWeapon;
@@ -43,7 +42,7 @@ namespace Player
                 if (!enemy.isActiveAndEnabled) return;
                 Enemy.Enemy _enemy = enemy.GetComponent<Enemy.Enemy>();
                 #if UNITY_EDITOR
-                if (debug) DebugSW.Log($"\tHit enemy::white; {enemy.name}:blue;");
+                if (debug) DebugSW.Log($"\tEnemy:orange; {enemy.name}:cyan; Got:lightPurple; Hit:lightRed;", this);
                 #endif
                 _enemy.Damage(attackDamage);
             }

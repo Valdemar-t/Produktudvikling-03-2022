@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
-namespace CustomInspector.SilentWolfDebug
+namespace CustomInspector.SilentWolfHelper.Debugger
 {
     public static class Emoji
     {
