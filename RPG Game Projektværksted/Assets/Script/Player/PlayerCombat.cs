@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
-using CustomInspector.Attributes;
-using CustomInspector.SilentWolfHelper.Debugger;
+using SilentWolfHelper.CustomInspector.Attributes;
+using SilentWolfHelper.Debugger;
 using UnityEngine;
 using Weapon;
 

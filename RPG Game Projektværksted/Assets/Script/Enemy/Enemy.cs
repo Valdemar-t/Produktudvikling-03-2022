@@ -1,7 +1,7 @@
 ﻿// ReSharper disable ParameterHidesMember
 
-using CustomInspector.Attributes;
-using CustomInspector.SilentWolfHelper.Debugger;
+using SilentWolfHelper.CustomInspector.Attributes;
+using SilentWolfHelper.Debugger;
 using UnityEngine;
 
 // ReSharper disable VirtualMemberNeverOverridden.Global

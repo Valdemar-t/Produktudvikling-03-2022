@@ -1,8 +1,8 @@
-﻿using CustomInspector.SilentWolfHelper.Debugger;
+﻿using SilentWolfHelper.Debugger;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
-using static CustomInspector.SilentWolfHelper.Helpers;
+using static SilentWolfHelper.Helpers;
 
 namespace Player
 {

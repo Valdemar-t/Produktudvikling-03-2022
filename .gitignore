@@ -38,3 +38,5 @@ sysinfo.txt
 *.unitypackage
 *.log
 RPG Game Projektværksted/.idea/.idea.RPG Game Projektværksted/.idea/workspace.xml
+*.meta
+*.xml

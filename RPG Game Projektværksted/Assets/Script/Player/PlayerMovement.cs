@@ -1,5 +1,5 @@
-using CustomInspector.Attributes;
-using CustomInspector.SilentWolfHelper.Debugger;
+using SilentWolfHelper.CustomInspector.Attributes;
+using SilentWolfHelper.Debugger;
 using UnityEngine;
 
 namespace Player
@@ -58,7 +58,7 @@ namespace Player
         {
             if (cam == null)
             {
-                if (debug) DebugSW.Log("This is a cool colorful debug log method made by SilentWolf:rainbow:b;");
+                if (debug) DebugSW.Log($"This is a cool colorful debug log method made with:rainbow:b; {Emoji.GetEmoji("love", "\u2764")}:red:b; by SilentWolf:rainbow:b; {Emoji.GetEmoji("sniper", "(-_･) ︻デ═一 ▸")}:rainbow:b;");
                 cam = Camera.main;
                 return;
             }
