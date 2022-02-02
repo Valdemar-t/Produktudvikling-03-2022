@@ -2,12 +2,12 @@
 {
     public class FontFormat
     {
-        private readonly string _prefix;
-
-        private readonly string _suffix;
 
         public static FontFormat Bold = new FontFormat("b");
         public static FontFormat Italic = new FontFormat("i");
+        private readonly string _prefix;
+
+        private readonly string _suffix;
         private FontFormat(string format)
         {
             _prefix = $"<{format}>";

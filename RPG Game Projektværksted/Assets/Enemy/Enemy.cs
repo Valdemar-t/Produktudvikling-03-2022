@@ -1,8 +1,12 @@
 ﻿// ReSharper disable ParameterHidesMember
 
+#region
+
 using SilentWolfHelper.CustomInspector.Attributes;
 using SilentWolfHelper.Debugger;
 using UnityEngine;
+
+#endregion
 
 // ReSharper disable VirtualMemberNeverOverridden.Global
 
@@ -12,7 +16,7 @@ namespace Enemy
     {
         [SerializeField, Header("Toggles"), LeftToggle, Tooltip("This is a Debug switch")] private bool debug;
         [SerializeField, Header("Health"), Tooltip("This is the health of the enemy")] public float maxHealth;
-        [SerializeField, Header("Attack"), Tooltip("This is the attack damage the enemy does")] public float attackDamage; 
+        [SerializeField, Header("Attack"), Tooltip("This is the attack damage the enemy does")] public float attackDamage;
         [SerializeField, Space, Tooltip("This is the attack range the enemy has")] public float attackRange;
         [HideInInspector] public float currentHealth;
 
@@ -21,7 +25,7 @@ namespace Enemy
         public virtual void Damage(float attackDamage)
         {
             currentHealth -= attackDamage;
-            
+
             if (!(currentHealth <= 0)) return;
             Die();
             currentHealth = 0;

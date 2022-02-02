@@ -1,12 +1,18 @@
+#region
+
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using UnityEngine;
 
+#endregion
+
 namespace SilentWolfHelper.Debugger
 {
     public static class FontColor
     {
+        private const string suffix = "</color>";
+
         private static readonly Dictionary<string, Color> Colors = new Dictionary<string, Color>
         {
             {"red", Color.red},
@@ -29,7 +35,7 @@ namespace SilentWolfHelper.Debugger
             {"lightGreen", "#44FF47".ToColor()},
             {"lightPurple", "#7944FF".ToColor()}
         };
-        
+
         private static readonly Dictionary<string, Color> RainBowColors = new Dictionary<string, Color>
         {
             {"lightRed", "#FF4447".ToColor()},
@@ -39,9 +45,8 @@ namespace SilentWolfHelper.Debugger
             {"lightBlue", "#4470FF".ToColor()},
             {"lightPurple", "#7944FF".ToColor()}
         };
-        
+
         private static string prefix;
-        private const string suffix = "</color>";
 
         public static string GetColorfulText(string text, GroupCollection groups)
         {
@@ -49,10 +54,10 @@ namespace SilentWolfHelper.Debugger
 
             for (int i = 0; i < groups.Count; i++)
             {
-                colorName =  GetPossibleValue(groups[i].Value);
-                if(colorName != string.Empty) break;
+                colorName = GetPossibleValue(groups[i].Value);
+                if (colorName != string.Empty) break;
             }
-            
+
             if (colorName.Equals("rainbow"))
             {
                 string message = "";
@@ -68,8 +73,8 @@ namespace SilentWolfHelper.Debugger
 
                 return message;
             }
-            
-            
+
+
             if (Colors.ContainsKey(colorName)) prefix = ConvertToHtml(Colors[colorName]);
             else return text;
 

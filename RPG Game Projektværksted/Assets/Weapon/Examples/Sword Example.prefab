@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1912368409924640460
+--- !u!1 &167104199964072581
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1912368409924640463}
-  - component: {fileID: 1912368409924640457}
+  - component: {fileID: 5215821748679769539}
+  - component: {fileID: 1192737089999206750}
   m_Layer: 0
   m_Name: Sword Example
   m_TagString: Untagged
@@ -17,39 +17,40 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1912368409924640463
+--- !u!4 &5215821748679769539
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1912368409924640460}
+  m_GameObject: {fileID: 167104199964072581}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.8, y: 0.26, z: 0}
+  m_LocalPosition: {x: 0.681, y: 0.26, z: 0}
   m_LocalScale: {x: 0.68875, y: 0.1221875, z: 1}
   m_Children:
-  - {fileID: 1912368410097278315}
-  - {fileID: 1912368410671568251}
+  - {fileID: 6831561686312734898}
+  - {fileID: 3219168809047334426}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1912368409924640457
+--- !u!114 &1192737089999206750
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1912368409924640460}
+  m_GameObject: {fileID: 167104199964072581}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12e6c2c72fdd8164ea157271732e16aa, type: 3}
+  m_Script: {fileID: 11500000, guid: a5ce5a5a7040b154ea39e399ad91329d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponName: Long Sword
-  description: This is a long sword
-  range: 0.35
+  weaponName: Sword
+  description: This is a sword Example
+  range: 0.33
   damage: 5
---- !u!1 &1912368410097278312
+  attackPoint: {fileID: 3219168809047334426}
+--- !u!1 &2867902380794901550
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -57,8 +58,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1912368410097278315}
-  - component: {fileID: 1912368410097278314}
+  - component: {fileID: 6831561686312734898}
+  - component: {fileID: 1281969336492461095}
   m_Layer: 0
   m_Name: Graphics
   m_TagString: Untagged
@@ -66,27 +67,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1912368410097278315
+--- !u!4 &6831561686312734898
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1912368410097278312}
+  m_GameObject: {fileID: 2867902380794901550}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1912368409924640463}
+  m_Father: {fileID: 5215821748679769539}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1912368410097278314
+--- !u!212 &1281969336492461095
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1912368410097278312}
+  m_GameObject: {fileID: 2867902380794901550}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -131,7 +132,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1912368410671568248
+--- !u!1 &3314401019387387266
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -139,7 +140,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1912368410671568251}
+  - component: {fileID: 3219168809047334426}
   m_Layer: 0
   m_Name: AttackPoint
   m_TagString: Untagged
@@ -147,17 +148,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1912368410671568251
+--- !u!4 &3219168809047334426
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1912368410671568248}
+  m_GameObject: {fileID: 3314401019387387266}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.02, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1912368409924640463}
+  m_Father: {fileID: 5215821748679769539}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

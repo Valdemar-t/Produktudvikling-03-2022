@@ -1,4 +1,9 @@
-﻿using UnityEngine;
+﻿#region
+
+using UnityEngine;
+
+#endregion
+
 // ReSharper disable ClassNeverInstantiated.Global
 
 namespace SilentWolfHelper
@@ -7,9 +12,9 @@ namespace SilentWolfHelper
     {
         private static bool fadeIn;
         private static bool fadeOut;
-        
+
         private static CanvasGroup currentUI;
-        
+
         public static void Fade()
         {
             if (fadeIn && currentUI.alpha < 1)
@@ -25,14 +30,14 @@ namespace SilentWolfHelper
 
         public static void Show(CanvasGroup currentUIGroup, bool fade = false)
         {
-            if (currentUI == null) currentUI = currentUIGroup;
+            if (currentUI.Equals(null)) currentUI = currentUIGroup;
             fadeIn = true;
             if (fade) Hide(currentUI);
         }
 
         public static void Hide(CanvasGroup currentUIGroup)
         {
-            if (currentUI == null) currentUI = currentUIGroup;
+            if (currentUI.Equals(null)) currentUI = currentUIGroup;
             fadeOut = true;
         }
 

@@ -1,110 +1,96 @@
-﻿using System.Collections.Generic;
+﻿#region
+
+using System.Collections.Generic;
 using Inventory.Scripts;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+#endregion
+
 namespace Managers
 {
     public class GameManager : MonoBehaviour
     {
-        public static GameManager instance; //MARKER SINGLETON PATTERN
+        public static GameManager instance;
         public bool isPaused;
 
-        public List<Item> items = new List<Item>(); //WHAT KIND OF ITEMS WE HAVE 
-        public List<int> itemNumbers = new List<int>(); //HOW MANY ITEMS WE HAVE 
+        public List<Item> items = new List<Item>();
+        public List<int> itemNumbers = new List<int>();
         public GameObject[] slots;
 
-        //public Dictionary<Item, int> itemDict = new Dictionary<Item, int>();//OPTIONAL
+        public ItemButton thisButton;
+        public ItemButton[] itemButtons;
 
-        public ItemButton thisButton; //Keep Track of which Item Button We are mouse Hovering
-        public ItemButton[] itemButtons; //ALL of ITEM BUTTONS in this game [Used for reset]
+        public Dictionary<Item, int> itemDictionary = new Dictionary<Item, int>(); // OPTIONAL
 
 
         private void Awake()
         {
-            if(instance == null)
-            {
-                instance = this;
-            }
-            else
-            {
-                if(instance != this)
-                {
-                    Destroy(gameObject);
-                }
-            }
+            if (instance.Equals(null)) instance = this;
+            else if (instance != this) Destroy(gameObject);
+
             DontDestroyOnLoad(gameObject);
         }
 
-        private void Start()
-        {
-            DisplayItems();
-        }
+        private void Start() => DisplayItems();
 
         private void DisplayItems()
         {
-            //We IGNORE the fact
-            for(int i = 0; i < slots.Length; i++)
+            for (int i = 0; i < slots.Length; i++)
             {
                 Image itemImage = slots[i].transform.GetChild(0).GetComponent<Image>();
                 TextMeshProUGUI countText = slots[i].transform.GetChild(1).GetComponent<TextMeshProUGUI>();
                 Transform closeButton = slots[i].transform.GetChild(2);
-                if(i < items.Count)
+                if (i < items.Count)
                 {
-                    //UPDATE slots Item Image
-                    
+                    if (itemNumbers[i].Equals(99999)) PickupItem.maxItemQuantityInInventoryList.Add(items[i]);
                     itemImage.color = new Color(1, 1, 1, 1);
                     itemImage.sprite = items[i].Sprite;
-                    //UPDATE slots Count Text
-                    
                     countText.color = new Color(1, 1, 1, 0.8235294f);
                     countText.text = itemNumbers[i].ToString();
-
-                    //UPDATE CLOSE/THROW button
                     closeButton.gameObject.SetActive(true);
                 }
-                else//Some Remove Items
+                else
                 {
-                    //UPDATE slots Item Image
                     itemImage.color = new Color(1, 1, 1, 0);
                     itemImage.sprite = null;
-
-                    //UPDATE slots Count Text
                     countText.color = new Color(1, 1, 1, 0);
                     countText.text = null;
-
-                    //UPDATE CLOSE/THROW button
                     closeButton.gameObject.SetActive(false);
                 }
             }
         }
 
-        public void AddItem(Item _item)
+        public void AddItem(Item item)
         {
-            if(!items.Contains(_item))
+            if (!items.Contains(item))
             {
-                items.Add(_item);
+                items.Add(item);
                 itemNumbers.Add(1);
             }
-            else for (int i = 0; i < items.Count; i++) if (_item == items[i]) itemNumbers[i]++;
+            else
+                for (int i = 0; i < items.Count; i++)
+                    if (item.Equals(items[i]))
+                        itemNumbers[i]++;
 
             DisplayItems();
         }
 
-        public void RemoveItem(Item _item)
+        public void RemoveItem(Item item)
         {
-            if (items.Contains(_item)) //IF There is one existing item in our bags(List)
+            if (items.Contains(item)) //IF There is one existing item in our bag(List)
                 for (int i = 0; i < items.Count; i++)
                 {
-                    if (_item != items[i]) continue;
+                    if (item != items[i]) continue;
                     itemNumbers[i]--;
-                    
+
                     if (itemNumbers[i] != 0) continue;
-                    items.Remove(_item);
+                    items.Remove(item);
                     itemNumbers.Remove(itemNumbers[i]);
+                    PickupItem.maxItemQuantityInInventoryList.Remove(items[i]);
                 }
-            else Debug.Log($"THERE IS NO {_item} in my Bags");
+            else Debug.Log($"THERE IS NO {item} in my Bag");
 
             ResetButtonItems();
             DisplayItems();
@@ -112,8 +98,7 @@ namespace Managers
 
         public void ResetButtonItems()
         {
-            for(int i = 0; i < itemButtons.Length; i++) itemButtons[i].thisItem = i < items.Count ? items[i] : null;
-        } 
-
+            for (int i = 0; i < itemButtons.Length; i++) itemButtons[i].thisItem = i < items.Count ? items[i] : null;
+        }
     }
 }

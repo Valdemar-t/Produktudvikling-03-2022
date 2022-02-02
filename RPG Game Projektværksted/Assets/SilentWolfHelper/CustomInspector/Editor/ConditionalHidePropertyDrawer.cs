@@ -1,8 +1,12 @@
-﻿using SilentWolfHelper.CustomInspector.Attributes;
+﻿#region
+
+using SilentWolfHelper.CustomInspector.Attributes;
 using UnityEditor;
 using UnityEngine;
 
-namespace Combat.CustomInspector.Editor
+#endregion
+
+namespace SilentWolfHelper.CustomInspector.Editor
 {
     [CustomPropertyDrawer(typeof(ConditionalHideAttribute))]
     public class ConditionalHidePropertyDrawer : PropertyDrawer
@@ -10,18 +14,14 @@ namespace Combat.CustomInspector.Editor
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
             ConditionalHideAttribute condHAtt = (ConditionalHideAttribute)attribute;
-            bool enabled = GetConditionalHideAttributeResult(condHAtt, property);
- 
-            bool wasEnabled = GUI.enabled;
+            bool enabled = GetConditionalHideAttributeResult(condHAtt, property), wasEnabled = GUI.enabled;
+
             GUI.enabled = enabled;
-            if (!condHAtt.HideInInspector || enabled)
-            {
-                EditorGUI.PropertyField(position, property, label, true);
-            }
- 
+            if (!condHAtt.HideInInspector || enabled) EditorGUI.PropertyField(position, property, label, true);
+
             GUI.enabled = wasEnabled;
         }
- 
+
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
         {
             ConditionalHideAttribute condHAtt = (ConditionalHideAttribute)attribute;
@@ -29,14 +29,14 @@ namespace Combat.CustomInspector.Editor
 
             return !condHAtt.HideInInspector || enabled ? EditorGUI.GetPropertyHeight(property, label) : -EditorGUIUtility.standardVerticalSpacing;
         }
- 
+
         private static bool GetConditionalHideAttributeResult(ConditionalHideAttribute condHAtt, SerializedProperty property)
         {
             bool enabled = true;
             string propertyPath = property.propertyPath;
             string conditionPath = propertyPath.Replace(property.name, condHAtt.ConditionalSourceField);
             SerializedProperty sourcePropertyValue = property.serializedObject.FindProperty(conditionPath);
- 
+
             if (sourcePropertyValue != null) enabled = sourcePropertyValue.boolValue;
             else Debug.LogWarning($"Attempting to use a ConditionalHideAttribute but no matching SourcePropertyValue found in object: {condHAtt.ConditionalSourceField}");
 

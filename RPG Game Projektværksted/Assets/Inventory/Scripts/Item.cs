@@ -1,6 +1,9 @@
+#region
+
 using Unity.Collections;
 using UnityEngine;
-using Random = UnityEngine.Random;
+
+#endregion
 
 namespace Inventory.Scripts
 {
@@ -14,13 +17,13 @@ namespace Inventory.Scripts
         [Space(0.4f)] public int BuyPrice;
         [Space(0.4f)] public int SellPrice;
 
-        private void RandomPriceValue() 
+        private void OnValidate() => priceDifference = BuyPrice - SellPrice;
+
+        private void RandomPriceValue()
         {
             BuyPrice = Random.Range(100, 1000);
             SellPrice = Random.Range(1, 100);
             priceDifference = BuyPrice - SellPrice;
         }
-
-        private void OnValidate() => priceDifference = BuyPrice - SellPrice;
     }
 }

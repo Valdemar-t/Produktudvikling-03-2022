@@ -1,5 +1,9 @@
+#region
+
 using System.Text.RegularExpressions;
 using UnityEngine;
+
+#endregion
 
 namespace SilentWolfHelper.Debugger
 {

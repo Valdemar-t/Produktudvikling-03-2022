@@ -1,5 +1,9 @@
-﻿using TMPro;
+﻿#region
+
+using TMPro;
 using UnityEngine;
+
+#endregion
 
 namespace Inventory.Scripts
 {
@@ -11,7 +15,7 @@ namespace Inventory.Scripts
         public void ShowTooltip() => gameObject.SetActive(true);
         public void HideTooltip() => gameObject.SetActive(false);
         public void UpdateTooltip(string updatedDetailText) => detailText.text = updatedDetailText;
-        public void SetPosition(Vector2 position) => transform.localPosition = position; 
+        public void SetPosition(Vector2 position) => transform.localPosition = position;
     }
 
 }
