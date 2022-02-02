@@ -4,6 +4,8 @@
 [Bb]uild/
 [Bb]uilds/
 Assets/AssetStoreTools*
+/RPG Game Projektværksted/.idea/
+/RPG Game Projektværksted/Assets/Editor/WakaTime/
 
 # Visual Studio cache directory
 .vs/
@@ -25,6 +27,9 @@ ExportedObj/
 *.pdb
 *.opendb
 *.VC.db
+*.log
+*.meta
+*.xml
 
 # Unity3D generated meta files
 *.pidb.meta
@@ -36,3 +41,6 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+RPG Game Projektværksted/Logs/shadercompiler-AssetImportWorker0.log
+RPG Game Projektværksted/Logs/AssetImportWorker0.log
+RPG Game Projektværksted/Logs/AssetImportWorker0-prev.log
