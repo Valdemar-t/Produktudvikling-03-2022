@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3952b48cd99e8e34fa0442b9c2b3620c, type: 3}
+  m_Name: necklace
+  m_EditorClassIdentifier: 
+  Name: necklace of Wastelands
+  Description: 'This necklace contains some magic from earth of the wasteland '
+  Sprite: {fileID: 21300000, guid: d04c5e57e9d839e4aa2e9a43ddc1d975, type: 3}
+  BuyPrice: 2500
+  SellPrice: 10
