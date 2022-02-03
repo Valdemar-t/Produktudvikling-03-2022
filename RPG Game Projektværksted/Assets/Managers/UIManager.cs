@@ -8,18 +8,18 @@ namespace Managers
 {
     public class UIManager : MonoBehaviour
     {
-        public GameObject inventoryMenu;
+        [Header("Game Manager"), Space] public GameManager gameManager;
+        [Header("Inventory UI/Menu"), Space] public GameObject inventoryMenu;
+
+        private void Awake()
+        {
+            if (gameManager == null) gameManager = FindObjectOfType<GameManager>();
+        }
 
         private void Start() => inventoryMenu.gameObject.SetActive(false);
 
-        private void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.E)) InventoryControl();
-        }
-
         public void InventoryControl()
         {
-
             if (GameManager.instance.isPaused) Resume();
             else Pause();
         }

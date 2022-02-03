@@ -1,6 +1,7 @@
 ﻿#region
 
 using System.ComponentModel;
+using Managers;
 using SilentWolfHelper.CustomInspector.Attributes;
 using SilentWolfHelper.Debugger;
 using UnityEngine;
@@ -43,7 +44,7 @@ namespace Player.Scripts
                 if (!enemy.isActiveAndEnabled) return;
                 Enemy.Enemy _enemy = enemy.GetComponent<Enemy.Enemy>();
                 #if UNITY_EDITOR
-                if (debug) DebugSW.Log($"\tEnemy:orange; {enemy.name}:cyan; Got:lightPurple; Hit:lightRed;", this);
+                if (debug || GameManager.instance.debug) DebugSW.Log($"\tEnemy:orange; {enemy.name}:cyan; Got:lightPurple; Hit:lightRed;", this);
                 #endif
                 _enemy.Damage(attackDamage);
             }
@@ -61,7 +62,7 @@ namespace Player.Scripts
 
         protected override void OnUpdate() => OnPlayerUpdate();
 
-        protected virtual void OnPlayerAwake() => base.OnUpdate();
+        protected virtual void OnPlayerAwake() => base.OnAwake();
 
         protected virtual void OnPlayerStart() => base.OnStart();
 

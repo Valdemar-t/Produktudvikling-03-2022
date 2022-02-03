@@ -25,7 +25,7 @@ namespace Inventory.Components
             GetThisItem();
 
             if (thisItem == null) return;
-            Log($"ENTER {thisItem.Name} SLOT");
+            if (instance.debug) Log($"ENTER {thisItem.Name} SLOT");
 
             tooltip.ShowTooltip();
 
@@ -43,16 +43,16 @@ namespace Inventory.Components
         //HELPER FUNCTION to get the items on this button
         private Item GetThisItem()
         {
-            for (int i = 0; i < instance.items.Count; i++)
+            for (int i = 0; i < instance.inventoryManager.items.Count; i++)
                 if (buttonID == i)
-                    thisItem = instance.items[i];
+                    thisItem = instance.inventoryManager.items[i];
 
             return thisItem;
         }
 
         public void CloseButton()
         {
-            instance.RemoveItem(GetThisItem());
+            instance.inventoryManager.RemoveItem(GetThisItem());
 
             thisItem = GetThisItem();
             if (thisItem != null)

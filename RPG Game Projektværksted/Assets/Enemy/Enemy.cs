@@ -2,6 +2,7 @@
 
 #region
 
+using Managers;
 using SilentWolfHelper.CustomInspector.Attributes;
 using SilentWolfHelper.Debugger;
 using UnityEngine;
@@ -34,7 +35,7 @@ namespace Enemy
         protected virtual void Die()
         {
             #if UNITY_EDITOR
-            if (debug) DebugSW.Log($"\tEnemy:orange; {name}:cyan; Died:lightRed;", this);
+            if (debug || GameManager.instance.debug) DebugSW.Log($"\tEnemy:orange; {name}:cyan; Died:lightRed;", this);
             #endif
             Destroy(gameObject);
         }

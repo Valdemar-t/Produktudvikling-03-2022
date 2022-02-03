@@ -22,14 +22,14 @@ namespace Inventory.Components
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (!other.CompareTag("Player")) return;
-            switch (GameManager.instance.items.Count < GameManager.instance.slots.Length)
+            switch (GameManager.instance.inventoryManager.items.Count < GameManager.instance.inventoryManager.slots.Length)
             {
                 case true when maxItemQuantityInInventoryList.Contains(itemData): return;
                 case true:
                     if (pickupFX != null) Instantiate(pickupFX, transform.position, Quaternion.identity);
                     if (pickupSFX != null) pickupSFX.Play();
                     Destroy(gameObject);
-                    GameManager.instance.AddItem(itemData);
+                    GameManager.instance.inventoryManager.AddItem(itemData);
                     break;
                 default:
                     InventoryIsFull();
@@ -42,6 +42,9 @@ namespace Inventory.Components
             if (spriteRenderer.sprite != item) spriteRenderer.sprite = item;
         }
 
-        private static void InventoryIsFull() => DebugSW.Log("INVENTORY IS FULL:rainbow:b;");
+        private static void InventoryIsFull()
+        {
+            if (GameManager.instance.debug) DebugSW.Log("INVENTORY IS FULL:rainbow:b;");
+        }
     }
 }

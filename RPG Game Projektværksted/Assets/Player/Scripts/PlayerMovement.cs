@@ -1,5 +1,6 @@
 #region
 
+using Managers;
 using SilentWolfHelper.CustomInspector.Attributes;
 using SilentWolfHelper.Debugger;
 using UnityEngine;
@@ -44,7 +45,7 @@ namespace Player.Scripts
         {
             if (cam == null)
             {
-                if (debug) DebugSW.Log($"This is a cool colorful debug log method made with:rainbow:b; {Emoji.GetEmoji("love", "\u2764")}:red:b; by SilentWolf:rainbow:b; {Emoji.GetEmoji("sniper", "(-_･) ︻デ═一 ▸")}:rainbow:b;");
+                if (debug || GameManager.instance.debug) DebugSW.Log($"This is a cool colorful debug log method made with:rainbow:b; {Emoji.GetEmoji("love", "\u2764")}:red:b; by SilentWolf:rainbow:b; {Emoji.GetEmoji("sniper", "(-_･) ︻デ═一 ▸")}:rainbow:b;");
                 cam = Camera.main;
                 return;
             }
