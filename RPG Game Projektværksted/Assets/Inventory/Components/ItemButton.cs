@@ -10,7 +10,7 @@ using static UnityEngine.RectTransformUtility;
 
 #endregion
 
-namespace Inventory.Scripts
+namespace Inventory.Components
 {
     public class ItemButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
@@ -24,13 +24,13 @@ namespace Inventory.Scripts
         {
             GetThisItem();
 
-            if (thisItem.Equals(null)) return;
+            if (thisItem == null) return;
             Log($"ENTER {thisItem.Name} SLOT");
 
             tooltip.ShowTooltip();
 
             tooltip.UpdateTooltip(GetDetailText(thisItem));
-            ScreenPointToLocalPointInRectangle(Find("Canvas").transform as RectTransform, Input.mousePosition, null, out position);
+            ScreenPointToLocalPointInRectangle(Find("Inventory Bag").transform as RectTransform, Input.mousePosition, null, out position);
             tooltip.SetPosition(position);
         }
 
@@ -60,7 +60,7 @@ namespace Inventory.Scripts
                 tooltip.ShowTooltip();
 
                 tooltip.UpdateTooltip(GetDetailText(thisItem));
-                ScreenPointToLocalPointInRectangle(Find("Canvas").transform as RectTransform, Input.mousePosition, null, out position);
+                ScreenPointToLocalPointInRectangle(Find("Inventory Bag").transform as RectTransform, Input.mousePosition, null, out position);
                 tooltip.SetPosition(position);
             }
             else

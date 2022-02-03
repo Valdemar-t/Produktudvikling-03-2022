@@ -1,7 +1,7 @@
 ﻿#region
 
 using System.Collections.Generic;
-using Inventory.Scripts;
+using Inventory.Components;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -22,12 +22,12 @@ namespace Managers
         public ItemButton thisButton;
         public ItemButton[] itemButtons;
 
-        public Dictionary<Item, int> itemDictionary = new Dictionary<Item, int>(); // OPTIONAL
+        //public Dictionary<Item, int> itemDictionary = new Dictionary<Item, int>(); // OPTIONAL
 
 
         private void Awake()
         {
-            if (instance.Equals(null)) instance = this;
+            if (instance == null) instance = this;
             else if (instance != this) Destroy(gameObject);
 
             DontDestroyOnLoad(gameObject);
@@ -96,7 +96,7 @@ namespace Managers
             DisplayItems();
         }
 
-        public void ResetButtonItems()
+        private void ResetButtonItems()
         {
             for (int i = 0; i < itemButtons.Length; i++) itemButtons[i].thisItem = i < items.Count ? items[i] : null;
         }

@@ -42,7 +42,7 @@ namespace Player.Scripts
 
         private void PlayerRotation()
         {
-            if (cam.Equals(null))
+            if (cam == null)
             {
                 if (debug) DebugSW.Log($"This is a cool colorful debug log method made with:rainbow:b; {Emoji.GetEmoji("love", "\u2764")}:red:b; by SilentWolf:rainbow:b; {Emoji.GetEmoji("sniper", "(-_･) ︻デ═一 ▸")}:rainbow:b;");
                 cam = Camera.main;

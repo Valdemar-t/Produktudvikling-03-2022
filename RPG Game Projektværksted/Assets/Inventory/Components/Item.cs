@@ -5,7 +5,7 @@ using UnityEngine;
 
 #endregion
 
-namespace Inventory.Scripts
+namespace Inventory.Components
 {
     [CreateAssetMenu(menuName = "Create New Item", fileName = "New Item")]
     public class Item : ScriptableObject

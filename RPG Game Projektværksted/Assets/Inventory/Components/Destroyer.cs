@@ -4,7 +4,7 @@ using UnityEngine;
 
 #endregion
 
-namespace Inventory.Scripts
+namespace Inventory.Components
 {
     public class Destroyer : MonoBehaviour
     {

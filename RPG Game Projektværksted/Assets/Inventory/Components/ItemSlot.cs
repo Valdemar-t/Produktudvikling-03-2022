@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 #endregion
 
-namespace Inventory.Scripts
+namespace Inventory.Components
 {
     public class ItemSlot : MonoBehaviour
     {

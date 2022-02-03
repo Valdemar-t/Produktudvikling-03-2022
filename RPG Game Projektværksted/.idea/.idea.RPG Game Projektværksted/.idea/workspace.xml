@@ -5,11 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd3619e7-8d72-46bc-bb34-658856643845" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RPG Game Projektværksted/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RPG Game Projektværksted/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Components/Destroyer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inventory/Components/Destroyer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Components/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inventory/Components/Item.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Components/ItemButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inventory/Components/ItemButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Components/ItemSlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inventory/Components/ItemSlot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Components/PickupItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inventory/Components/PickupItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Components/ToolTips.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inventory/Components/ToolTips.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Sprites/TabBG.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inventory/Sprites/TabBG.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Managers/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Scripts/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +104,7 @@
       <workItem from="1643613119744" duration="41188000" />
       <workItem from="1643748007908" duration="6531000" />
       <workItem from="1643790302769" duration="7560000" />
+      <workItem from="1643849410984" duration="904000" />
     </task>
     <servers />
   </component>

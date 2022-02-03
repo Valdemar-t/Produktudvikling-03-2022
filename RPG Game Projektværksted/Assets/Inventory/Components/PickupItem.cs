@@ -7,7 +7,7 @@ using UnityEngine;
 
 #endregion
 
-namespace Inventory.Scripts
+namespace Inventory.Components
 {
     public class PickupItem : MonoBehaviour
     {
