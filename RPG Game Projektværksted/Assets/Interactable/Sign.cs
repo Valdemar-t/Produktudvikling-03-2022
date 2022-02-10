@@ -6,7 +6,7 @@ namespace Interactable
     {
         protected internal override void Interaction()
         {
-            if (gameManager.debug) DebugSW.Log("Hi, I am a sign", this);
+            // What to do when interacting with a sign
         }
     }
 }

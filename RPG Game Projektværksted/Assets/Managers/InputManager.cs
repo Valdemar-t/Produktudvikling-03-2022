@@ -20,7 +20,7 @@ namespace Managers
         {
             if (KeyDown(inventory)) gameManager.uiManager.InventoryControl();
             if (KeyDown(interact)) gameManager.interactManager.Interact();
-            if (gameManager.debug && Input.GetKeyDown(KeyCode.Alpha1)) player.Damage(5);
+            if (gameManager.debug && KeyDown(KeyCode.Alpha1)) player.Damage(5);
         }
 
         private static bool KeyDown(KeyCode keyCode) => Input.GetKeyDown(keyCode);

@@ -5,34 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd3619e7-8d72-46bc-bb34-658856643845" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Interactable.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Interactable/Interactable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Interactable/Interactable.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Interactable/Sign.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Interactable/Sign.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Inventory/Items/Prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Inventory/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Managers/InputManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Managers/InputManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Managers/InteractManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Managers/InteractManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Managers/InventoryManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Managers/InventoryManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RPG Game Projektværksted/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RPG Game Projektværksted/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Components/ItemButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inventory/Components/ItemButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Components/PickupItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inventory/Components/PickupItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Interactable/Interactable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Interactable/Interactable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Interactable/Sign.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Interactable/Sign.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Scripts.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Managers/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Managers/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Managers/UIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Managers/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Managers/InputManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Managers/InteractManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Managers/InteractManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Player/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Scripts/PlayerCombat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Scripts/PlayerCombat.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Scripts/PlayerMovement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SIlentWolf.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SIlentWolf.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,15 +35,13 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://D:/GitHub/Produktudvikling-03-2022/RPG Game Projektværksted/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Editor/treeview/ItemGui/TimelineMarkerGUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Editor/Signals/SignalEmitterInspector.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/GitHub/Produktudvikling-03-2022/RPG Game Projektværksted/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemy/isClose.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/questgiver.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Managers/InteractManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Managers/InputManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Managers/InteractManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Managers/InputManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Editor/treeview/Drawers/Layers/MarkersLayer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.sprite@1.0.0/Editor/SpriteEditor/SpriteEditorWindow.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -126,6 +108,8 @@
       <workItem from="1643748007908" duration="6531000" />
       <workItem from="1643790302769" duration="7560000" />
       <workItem from="1643849410984" duration="904000" />
+      <workItem from="1644045069188" duration="1894000" />
+      <workItem from="1644480056474" duration="4031000" />
     </task>
     <servers />
   </component>

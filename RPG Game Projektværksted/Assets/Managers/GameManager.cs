@@ -32,9 +32,10 @@ namespace Managers
 
         private void InitializeManagers()
         {
-            if (inventoryManager == null) FindObjectOfType<InventoryManager>();
-            if (interactManager == null) FindObjectOfType<InteractManager>();
-            if (uiManager == null) FindObjectOfType<UIManager>();
+            if (inventoryManager == null) inventoryManager = FindObjectOfType<InventoryManager>();
+            if (interactManager == null) interactManager = FindObjectOfType<InteractManager>();
+            if (inputManager == null) inputManager = FindObjectOfType<InputManager>();
+            if (uiManager == null) uiManager = FindObjectOfType<UIManager>();
         }
     }
 }

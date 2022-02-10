@@ -14,6 +14,12 @@ namespace Managers
         private Ray2D ray;
         private RaycastHit2D raycastHit;
 
+        private Vector2 origin;
+
+        private bool rayCreated, rayHitter, rayInteractable;
+
+        private float time;
+
         private void Awake()
         {
             if (gameManager == null) gameManager = FindObjectOfType<GameManager>();
@@ -22,25 +28,30 @@ namespace Managers
 
         private void Update()
         {
-            Vector3 origin = playerEyes.position;
+            time -= Time.deltaTime;
+            if (time <= 0)
+                if (!Input.GetKeyDown(KeyCode.E)) rayInteractable = rayHitter = rayCreated = false;
+                else time = 1;
+
+            origin = playerEyes.position;
             directionToShootRay = player.transform.right;
             rayToDraw = CreateRay(origin, directionToShootRay);
         }
 
         internal void Interact()
         {
-            Vector2 origin = player.transform.position;
             ray = CreateRay2D(origin, directionToShootRay);
+            if (rayToDraw.origin.Equals(origin)) rayCreated = true;
             raycastHit = CreateRaycast2D(ray, player.interactRange, interactableMask);
             if (!raycastHit) return;
-            Gizmos.color = Color.yellow;
-            if (raycastHit.distance <= 2)
+            rayCreated = false;
+            rayHitter = true;
+            Interactable.Interactable interactable = raycastHit.transform.GetComponent<Interactable.Interactable>();
+            if (interactable)
             {
-                if (raycastHit.transform.TryGetComponent(out Interactable.Interactable interactable))
-                {
-                    Gizmos.color = Color.green;
-                    interactable.Interaction();
-                }
+                rayHitter = false;
+                rayInteractable = true;
+                interactable.Interaction();
             }
         }
 
@@ -52,7 +63,10 @@ namespace Managers
 
         private void OnDrawGizmos()
         {
-            Gizmos.color = Color.gray;
+            if (rayCreated) Gizmos.color = Color.blue;
+            else if (rayHitter) Gizmos.color = Color.yellow;
+            else if (rayInteractable) Gizmos.color = Color.green;
+            
             Gizmos.DrawRay(rayToDraw);
         }
     }

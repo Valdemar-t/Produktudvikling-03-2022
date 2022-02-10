@@ -1,5 +1,4 @@
 using Managers;
-using SilentWolfHelper.Debugger;
 using UnityEngine;
 
 namespace Interactable
@@ -9,9 +8,11 @@ namespace Interactable
         [SerializeField, Space] private protected GameManager gameManager;
 
         private Player.Scripts.Player player;
+
         protected internal virtual void Interaction()
         {
-            if (gameManager.debug) DebugSW.Log("Hi, I am a interactable object", this);
+            // What to do when interacting with the base class
+            if (gameManager.debug) Debug.Log("This is the interactable base class", this);
         }
 
         public bool IsClose(Vector3 currentPosition, Vector3 targetPosition) => Vector3.Distance(currentPosition, new Vector3(targetPosition.x, targetPosition.y, currentPosition.z)) <= 1;
